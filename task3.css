@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div{
+    margin-top: 20px;
+    width:400px;
+    height:560px;
+    /* background-color: #cfb7b7; */
+    display: flex;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.music-container{
+    width:300px;
+    height:500px;
+    background-color: #f5dddd;
+    border-radius: 2rem;
+    box-shadow: 0 1.2 3rem 0.5rem rgba(0,0,0,0.2);
+    padding: 3rem;
+    text-align: center;
+}
+
+.music-container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #131628;
+font-size: 2rem;
+font-weight: 400;
+text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+
+.music-container  #artist{
+    color: #cdafcd;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+   font-size: 2rem;
+   /* margin-bottom: 3rem; */
+   font-weight: 300;
+}
+
+.img-container{
+    width:13rem;
+    height:13rem;
+    margin: auto;
+}
+
+img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.music-controls{
+/* width:20rem; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* margin:auto; */
+margin-top:3rem;
+/* font-size: 10px; */
+}
+
+.music-controls .fa-solid{
+    color: #111111;
+font-size: 1rem;
+cursor: pointer;
+object-fit: cover;
+filter:drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+
+.music-controls .main-button{
+width:3rem;
+height: 3rem;
+border-radius: 50%;
+background-color: #111;
+color:#f6f6f6;
+font-size: 1rem;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.music-controls .fa-solid:hover{
+    color:grey;
+}
+
+.music-controls .fa-play:hover{
+    background-color: #d1ef95;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.rem rgba(0,0,0,0.4);
+}
+
+.anime{
+    animation:rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);   
+    }
+}
